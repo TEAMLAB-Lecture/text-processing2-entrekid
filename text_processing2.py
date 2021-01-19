@@ -82,6 +82,8 @@ def to_camel_case(underscore_str):
     """
     split_list = underscore_str.split("_")
     ans = ""
+    if "_" not in underscore_str:
+        return underscore_str
     for elem in split_list:
         if elem == "":
             continue
@@ -95,4 +97,4 @@ def to_camel_case(underscore_str):
 
 if __name__ == "__main__":
     # print(digits_to_words("____"))
-    print(to_camel_case("AAI_thing"))
+    print(to_camel_case("AAIthing"))
