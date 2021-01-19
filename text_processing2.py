@@ -89,10 +89,10 @@ def to_camel_case(underscore_str):
             if ans:
                 ans += elem.capitalize()
             else:
-                ans = elem
+                ans = elem.lower()
     return ans
 
 
 if __name__ == "__main__":
     # print(digits_to_words("____"))
-    print(to_camel_case("good_man_good"))
+    print(to_camel_case("AAI_thing"))
